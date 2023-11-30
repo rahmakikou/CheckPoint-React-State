@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React from 'react'; 
 import './App.css';
+import Profil from './composantes/Profil'; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+class App extends React.Component{
+  constructor(){
+    super()
+    this.state={
+      show : false   
+    }
+    
+  } 
+
+  MontrerCacher = () => {
+    this.setState({ 
+      show: !this.state.show,
+    }); 
+  } 
+  render() {
+    return (
+      <div>
+        
+        <h1>About myself</h1>
+       <h4 className={this.state.show ? 'one' : 'two'}> Want to know me ?</h4>
+
+        {
+          this.state.show &&  <Profil/>  
+        }
+ <div className='bouton'>  
+        <button style={{color: this.state.show ? 'red': 'green'}} onClick={this.MontrerCacher}> {this.state.show ? 'Hide':'Show'}</button>
+        </div>  
+      </div>
+    )
+  }
+} 
 
 export default App;

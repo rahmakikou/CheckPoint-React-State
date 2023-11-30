@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+ h1 {
+    text-align: center;
+    color: palevioletred; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large; 
+ }
+
+ h2 {
+    text-align: center;
+    color: deeppink; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic; 
+ }
+
+ h3 {
+    text-align: center;
+    color: violet;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;  
+ }
+
+.bouton {
+display: flex; 
+justify-content: space-around; 
+}
+.center{
+    display: flex; 
+    justify-content: space-around;  
+}
+.paris {
+   
+    margin-left: 50; 
+    border-radius: 8%; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.one {
+    text-align: center; 
+color:coral ;
+font-family: Georgia, 'Times New Roman', Times, serif; 
+font-size: x-large;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.two {
+    text-align: end; 
+    color: crimson; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large; 
 }
